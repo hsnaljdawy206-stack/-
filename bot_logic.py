@@ -1,7 +1,5 @@
 "python.analysis.diagnosticSeverityOverrides" :{
-            "reportMissingImports" : "none"}
-
-}python
+        "reportMissingImports" : "none"}python
 import datetime
 import hashlib
 import random
@@ -23,14 +21,11 @@ class ReportStatus(Enum):
             INVESTIGATING = "قيد التحقيق"
                 RESOLVED = "تم الحل"
 
-                class SupportType(Enum):
-                    BREAD = "دعم خبز"
+                class SupportType(Enum):                  BREAD = "دعم خبز"
                         FOOD = "دعم غذائي"
                             CASH = "دعم نقدي"
-                                NONE = "غير مؤهل"
-
-                                @dataclass
-                                class CorruptionReport:
+                                NONE = "غير مؤهل                               @dataclass
+                            class CorruptionReport:
                                     id: str
                                         user_id: str
                                             description: str
